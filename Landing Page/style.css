@@ -1,0 +1,190 @@
+body{
+    background-color: wheat;
+    margin:0;
+}
+.wrapper {
+position: relative;
+background-color: white;
+margin: 0 auto;
+width: 75%;
+}
+#header{
+    background-color: whitesmoke;
+    height: 220px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 75%;
+}
+#header-flex{
+    align-items: center;
+    border-bottom: 1px solid #124602;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#header-img{
+    max-height: 90px;
+    margin: 0;
+    padding: 10px 20px;
+    width: 90px;
+    border-radius: 50%;
+}
+#nav-bar{
+    padding-right: 20px;
+}
+#nav-bar ul li{
+    display: inline;
+}
+
+.nav-link{
+    background-color: lightcyan;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px grey;
+    color: black;
+    font-family: serif;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.nav-link:hover, .nav-link:active{
+    background-color: pink;
+    color: darkblue;
+}
+
+main{
+    margin-top: 200px;
+}
+section {
+    margin-top: -200px;
+    padding-top: 200px;
+  }
+  
+  @media (max-width: 869px) {
+  #header {
+    height: 240px;
+  }
+
+  #header-flex {
+    border-bottom: 1px solid #124602;
+    display: block;
+  }
+
+  #nav-bar {
+    padding-right: 0;
+  }
+
+  main {
+    margin-top: 240px;
+  }
+
+  section {
+    margin-top: -240px;
+    padding-top: 240px;
+  }
+}
+
+@media (max-width: 696px) {
+  #header {
+    height: 400px;
+  }
+
+  #header-flex {
+    border-bottom: 1px solid #124602;
+    display: block;
+  }
+
+  #nav-bar {
+    padding-right: 0;
+  }
+
+  #nav-bar ul {
+    padding-left: 0;
+  }
+
+  #nav-bar ul li {
+    display: block;
+    height: 50px;
+  }
+
+  .nav-link {
+    display: block;
+    margin: 0 auto;
+    width: 175px;
+  }
+
+  #nav-bar ul li:last-child .nav-link {
+    margin-right: auto;
+  }
+
+  main {
+    margin-top: 400px;
+  }
+
+  section {
+    margin-top: -400px;
+    padding-top: 400px;
+  }
+}
+
+#scent-section {
+  font-family: "Averia Serif Libre", cursive;
+  text-align: center;
+}
+
+#scent-section h1 {
+  font-size: 3em;
+}
+
+#video {
+  max-width: 90%;
+  max-height: 90%;
+}
+#description-section {
+  margin: 0 auto;
+  width: 80%;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+#pricing-section {
+  font-family: "Averia Serif Libre", cursive;
+  text-align: center;
+}
+
+#pricing-section h2 {
+  font-size: 2.5em;
+  margin-top: 2em;
+}
+
+#pricing-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing-info-left,
+.pricing-info-right {
+  box-sizing: border-box;
+  padding: 5px 10px;
+  width: 50%;
+}
+
+.pricing-info-left {
+  text-align: right;
+}
+
+.pricing-info-right {
+  text-align: left;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
