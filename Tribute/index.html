@@ -5,11 +5,20 @@
     <title>
       Michael Phelps
     </title>
+
     <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
   </head>
@@ -18,7 +27,8 @@
       <header>
         <h1 id="title" class="text-center">Michael Phelps</h1>
         <p class="quote">
-          "Records are always made to be broken no matter what they are."
+          "Records are always made to be
+          <span class="text-danger">broken </span> no matter what they are."
         </p>
         <div id="img-div">
           <img
@@ -58,16 +68,18 @@
         </ul>
         <div class="row">
           <div class="col-xs-4">
-            <button class="btn btn-primary btn-block">Like</button>
+            <button class="btn btn-primary btn-block">
+              <i class="fas fa-thumbs-up"></i> Like
+            </button>
           </div>
           <div class="col-xs-4">
             <button class="btn btn-info btn-block">
-              Info
+              <i class="fas fa-info-circle"></i> Info
             </button>
           </div>
           <div class="col-xs-4">
             <button class="btn btn-danger btn-block">
-              Delete
+              <i class="fas fa-trash"></i> Delete
             </button>
           </div>
         </div>
@@ -79,6 +91,12 @@
             Sofia Kurochkina
           </a>
         </p>
+        <form>
+          <input type="text" class="form-control" placeholder="ask Sofia" />
+          <button type="submit" class="btn btn-primary">
+            <i class="fa fa-paper-plane"></i> Send a question
+          </button>
+        </form>
       </footer>
     </div>
   </body>
