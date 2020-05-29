@@ -4,16 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jQuery Playground</title>
+  </head>
+  <body>
     <script>
       $(document).ready(function () {
         $("button").addClass("animated bounce");
         $(".well").addClass("animated shake");
         $("#target3").addClass("animated fadeOut");
         $("button").removeClass("btn-default");
+        $("#target1").css("color", "red");
+        //disable the button
+        $("#target1").prop("disabled", true);
+        $("#target4").html("<em>#target4</em>");
+        $("#target5").remove();
+        // Move an element from one div to another
+        $("#target2").appendTo("#right-well");
+        // Clone an element
+        $("#target5").clone().appendTo("#left-well");
+        // Target the parent of an element
+        $("#target1").parent().css("background-color", "red");
+        // Target children of an element
+        $("#right-well").children().css("color", "blue");
+        // Target the specific child with nth-child(n)
+        $(".target:nth-child(2)").addClass("animated bounce");
+        //Modify the entire page
+        $("body").addClass("animated hinge");
       });
     </script>
-  </head>
-  <body>
     <div class="container-fluid">
       <h3 class="text-primary text-center">jQuery Playground</h3>
       <div class="row">
